@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>STAGY.TN</title>
+    <link rel="stylesheet" href="master.css" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                "header header header header header header"
+                "menu main main main main main"
+                "footer footer footer footer footer footer";
+            gap: 10px;
+        }
+
+        .grid-container>div {
+            text-align: center;
+            padding: 0%;
+            font-size: 30px;
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .main {
+            grid-area: main;
+        }
+
+        .menu {
+            grid-area: menu;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+
+        .notation i {
+            color: #ffd700;
+            /* Gold color for stars */
+        }
+
+        .box {
+            margin: 20px;
+            /* Add some spacing for clarity */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <header>
+                <div class="container">
+                    <a href="#" class="logo">
+                        <img decoding="async" src="images/logo.png" alt="Logo" />
+                    </a>
+                    <nav>
+                        <ul>
+                            <li><a class="active" href="#">Home</a></li>
+                            <li><a href="#">Notification</a></li>
+                            <li>
+                                <a href="#"><i class="bx bx-user" style="color: #003459"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <hr />
+            </header>
+
+            <div class="landing">
+                <form action="#" method="get">
+                    <div class="text">
+                        <div class="bar_search">
+                            <select class="bar_search-select" name="ville">
+                                <option value="Sfax" selected>Sfax</option>
+                                <option value="Tunis">Tunis</option>
+
+                            </select>
+                            <select class="bar_search-select">
+
+                                <option value="date1"> toute l'année</option>
+                                <option value="date2">Vacance </option>
+
+                            </select>
+                            <select class="bar_search-select" name="specialite">
+
+                                <option value="Securité">Sécurité</option>
+                                <option value="Gestion de Base de données">
+                                    Gestion de Base de données
+                                </option>
+                                <option value="Big Data">Big Data</option>
+                                <option value="Genie logiciel" selected>Génie logiciel</option>
+                                <option value="Cloud">Cloud</option>
+                                <option value="Graphic design">Graphic design</option>
+
+                            </select>
+                            <button class="btn_bar_search" type="submit">
+                                RECHERCHER
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+
+        </div>
+
+        <div class="main">
+            <div class="box">
+                <img decoding="async" src="images/E1.png" alt="" />
+                <div class="content">
+                    <h3>Rating</h3>
+                    <span class="stars" data-rating="4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </span>
+                    </figure>
+                </div>
+                <div class="info">
+                    <a href="">Consulter</a>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img decoding="async" src="images/E2.png" alt="" />
+                <div class="content">
+                    <h3>Rating</h3>
+                    <figure class="notation">
+                        <span class="stars" data-rating="4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </span>
+                    </figure>
+                </div>
+                <div class="info">
+                    <a href="">Consulter</a>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img decoding="async" src="images/E3.png" alt="" />
+                <div class="content">
+                    <h3>Rating</h3>
+                    <figure class="notation">
+                        <span class="stars" data-rating="4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </span>
+                        < </figure>
+                </div>
+                <div class="info">
+                    <a href="">Consulter</a>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img decoding="async" src="images/E4.png" alt="" />
+                <div class="content">
+                    <h3>Rating</h3>
+                    <figure class="notation">
+                        <span class="stars" data-rating="4">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </span>
+                    </figure>
+                </div>
+                <div class="info">
+                    <a href="">Consulter</a>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img decoding="async" src="images/E5.png" alt="" />
+                <div class="content">
+                    <h3>Rating</h3>
+                    <figure class="notation">
+                        <span class="stars" data-rating="3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </span>
+                    </figure>
+                </div>
+                <div class="info">
+                    <a href="">Consulter</a>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img decoding="async" src="images/E6.png" alt="" />
+                <div class="content">
+                    <h3>Rating</h3>
+                    <figure class="notation">
+                        <span class="stars" data-rating="3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </span>
+                    </figure>
+                </div>
+                <div class="info">
+                    <a href="">Consulter</a>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img decoding="async" src="images/E7.png" alt="" />
+                <div class="content">
+                    <h3>Rating</h3>
+                    <figure class="notation">
+                        <span class="stars" data-rating="3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </span>
+                    </figure>
+                </div>
+                <div class="info">
+                    <a href="">Consulter</a>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img decoding="async" src="images/E8.png" alt="" />
+                <div class="content">
+                    <h3>Rating</h3>
+                    <figure class="notation">
+                        <span class="stars" data-rating="3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </span>
+                    </figure>
+                </div>
+                <div class="info">
+                    <a href="">Consulter</a>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img decoding="async" src="images/E9.png" alt="" />
+                <div class="content">
+                    <h3>Rating</h3>
+                    <figure class="notation">
+                        <span class="stars" data-rating="3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </span>
+                    </figure>
+                </div>
+                <div class="info">
+                    <a href="">Consulter</a>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+
+            <div class="box">
+                <img decoding="async" src="images/E10.png" alt="" />
+                <div class="content">
+                    <h3>Rating</h3>
+                    <figure class="notation">
+                        <span class="stars" data-rating="3">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </span>
+                    </figure>
+                </div>
+                <div class="info">
+                    <a href="">Consulter</a>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+
+            <!-- Repeat the above .box for additional products -->
+        </div>
+        <!--menu-->
+        <div class="menu">
+            <aside>
+                <div id="rech">
+                    <form method="POST" action="#">
+                        <p align="center">Choisissez ou allez :</p>
+                        <input type="text" name="T1" class="text-input" placeholder="Gouvernat" />
+                        <input type="text" name="T2" class="text-input" placeholder="Domaine" />
+                        <input type="text" name="T3" id="date" class="text-input" placeholder="Date" />
+                        <input type="button" value="Chercher" id="chercher" />
+                    </form>
+                    <div id="filtrage">
+                        <p aligne="center">Filtre</p>
+                        <select name="specialite" id="specialite">
+                            <option value="Securité">Sécurité</option>
+                            <option value="Gestion de Base de données">
+                                Gestion de Base de données
+                            </option>
+                            <option value="Big Data">Big Data</option>
+                            <option value="Genie logiciel" selected>Génie logiciel</option>
+                            <option value="Cloud">Cloud</option>
+                            <option value="Graphic design">Graphic design</option>
+                        </select>
+                        <select name="rate" id="rate">
+                            <option value="5" selected>5</option>
+                            <option value="4">4</option>
+                            <option value="3">3</option>
+                            <option value="2">2</option>
+                            <option value="1">1</option>
+                        </select>
+                        <select name="ville" id="ville">
+                            <option value="Sfax" selected>Sfax</option>
+                            <option value="Tunis">Tunis</option>
+                        </select>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <!--footer-->
+
+        <div class="footer">
+            <div class="content">
+                <h3>Qui sommes-nous ?</h3>
+                <p>
+                    Notre mission est de faciliter le processus de recherche de stage en
+                    mettant à disposition une plateforme innovante qui tire parti des
+                    expériences et des avis des stagiaires précédents.
+                </p>
+                <h3>Contact Info</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fas fa-home"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <p><a href="#">Stagy.tn@gmail.com</a></p>
+                <p><a href="#">Faculté de Science, Sfax</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="./stare.js"></script>
+</body>
+
+</html>

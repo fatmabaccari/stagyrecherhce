@@ -1,0 +1,430 @@
+/* General Variables */
+:root {
+    --main-color: #19c8fa;
+    --transparent-color: rgba(15, 116, 143, 0.7);
+
+    --main-transition: 0.3s;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Container */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1170px;
+}
+
+header {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 80px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 2rem;
+    transition: color var(--main-transition);
+}
+
+header nav ul li a:hover {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+/* Landing Section */
+.landing {
+    position: relative;
+    min-height: 80vh;
+    /* Minimum height of the landing section */
+    background: url("/images/image.png") no-repeat center center;
+    /* Background image */
+    background-size: cover;
+    /* Ensures the image covers the whole section */
+    padding: 0;
+    width: 100%;
+    /* Full width */
+    overflow: hidden;
+    /* Prevents overflow */
+}
+
+.landing .text {
+    position: absolute;
+    left: 70%;
+    /* Center horizontally */
+    top: 80%;
+    /* Center vertically */
+    transform: translate(-50%, -50%);
+    /* Center vertically and horizontally */
+    width: 100%;
+    /* Width of the text container */
+    height: 30%;
+    background-color: var(--transparent-color);
+    /* Background color */
+    color: white;
+    /* Text color */
+    display: flex;
+    /* Use flexbox for alignment */
+    flex-direction: column;
+    /* Stack elements vertically */
+    align-items: center;
+    /* Center items */
+    justify-content: center;
+    /* Center items vertically */
+}
+
+
+
+/* Bar Search Styles */
+.bar_search {
+    display: flex;
+    /* Align select elements and button in a row */
+    align-items: center;
+    /* Vertically aligns the items */
+    border-radius: 1rem;
+    /* Rounded corners for the entire container */
+    margin: 0;
+    /* No margin around the container */
+    padding: 0;
+    /* No padding around the container */
+    border: 4px solid var(--main-color);
+    /* Border color for the container */
+    border-right: none;
+    /* No right border */
+    width: 50%;
+    height: 30%;
+    /* Full width of the text container */
+}
+
+/* Select Elements */
+.bar_search-select {
+    padding: 0.5rem;
+
+    background-color: transparent;
+    
+    opacity: 0.9;
+    transition: background-color 0.3s ease;
+    flex: 1;
+    margin-right: 10px;
+    margin-left: 5px;
+    color:#333;
+    font-size :1.05rem; ;
+}
+
+/* Button */
+.btn_bar_search {
+    border-radius: 0 1rem 1rem 0;
+    background-color: var(--main-transition);
+    padding: 0.5rem 0.5rem;
+    cursor: pointer;
+    border-left: 5px solid white;
+    border: none;
+    font-size: 1.25rem;
+    transition: background-color 0.3s;
+}
+
+/* Button Hover State */
+.btn_bar_search:hover {
+    background-color: var(--main-color);
+    /* Change color on hover */
+}
+
+
+
+
+/* Menu */
+
+.menu {
+    padding: 20px;
+    margin: 10%;
+}
+
+#rech {
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background-color: #f9f9f9;
+}
+
+#domaine {
+    border: 2.5px solid #0C6F8F;
+    border-radius: 25px;
+}
+
+.text-input {
+    background: #FEFEFE;
+    border: 1.25px solid #ccc;
+    border-radius: 25px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    width: calc(100% - 30px);
+    /* Ensure the width stays within the container */
+    box-sizing: border-box;
+}
+
+.text-input :focus {
+    background: #FEFEFE;
+    border: 2.5px solid #217BF4;
+    border-radius: 25px;
+}
+
+#chercher {
+    background: rgba(38, 68, 146, 0.8);
+    /* Increased opacity for better visibility */
+    border-radius: 25px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+#chercher:hover {
+    background: rgba(38, 68, 146, 1);
+}
+
+#chercher:active {
+    transform: translateY(4px);
+}
+
+#filtrage {
+    border: 2px solid #0A5D77;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 20px;
+    box-shadow: 0px 8px 15px rgba(240, 161, 15, 0.1);
+}
+
+#specialite,
+#rate,
+#ville {
+    background-color: #FEFEFE;
+    border: 1.25px solid #ccc;
+    border-radius: 25px;
+    padding: 8px 15px;
+    width: 100%;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+#specialite:focus,
+#rate:focus,
+#ville:focus {
+    border: 2.5px solid #217BF4;
+}
+
+select {
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    border: none;
+    border-radius: 25px;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 1rem;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    appearance: none;
+    cursor: pointer;
+}
+
+select:focus {
+    border-color: #217BF4;
+    outline: none;
+}
+
+
+
+/* Main Section */
+.main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px 40px;
+    margin: 40px;
+}
+
+.box {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    transition: transform var(--main-transition), box-shadow var(--main-transition);
+    text-align: center;
+    height: 400px;
+    /* Ensures all boxes are the same height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--main-color);
+}
+
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px var(--shadow-color);
+}
+
+.box img {
+    width: 100%;
+    height: 200px;
+    /* Ensures image takes a consistent space */
+    object-fit: cover;
+    /* Ensures image scales correctly */
+    display: block;
+}
+
+.box .content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.box .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px solid #e6e6e7;
+}
+
+.box .info a {
+    color: var(--main-color);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.box .info i {
+    color: var(--main-color);
+}
+
+
+/* Footer */
+.footer {
+    background: url("/images/footer.png");
+    position: relative;
+    padding: 40px 40px;
+   
+    text-align: center;
+    color: white;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Overlay for readability */
+    z-index: 1;
+}
+
+.footer .content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+.footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.footer .social-icons a {
+    color: white;
+    font-size: 1.8rem;
+    padding: 10px;
+    transition: color var(--main-transition), transform 0.3s;
+}
+
+.footer .social-icons a:hover {
+    color: var(--main-color);
+    transform: translateY(-5px);
+}
+
+.footer h3 {
+    color: var(--main-color);
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+
+}
+
+.footer a:hover {
+    color: white;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color var(--main-transition);
+}
+
+button:hover {
+    background-color: darken(var(--main-color), 10%);
+}
