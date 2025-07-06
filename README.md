@@ -1,6 +1,6 @@
 # 🎯 StagY.tn — Page de recherche d’entreprise
 
-**StagYRecherche** est une application web collaborative dédiée à aider les étudiants à trouver des stages, en s’appuyant sur les expériences partagées par d’anciens stagiaires.  
+**StagY.tn** est une application web collaborative dédiée à aider les étudiants à trouver des stages, en s’appuyant sur les expériences partagées par d’anciens stagiaires.  
 Ce dépôt contient **la page de recherche d'entreprise**, développée dans le cadre d’un **projet de groupe** universitaire.
 
 ---
